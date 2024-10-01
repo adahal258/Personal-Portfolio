@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Smokum&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin:0;
+    padding: 0;
+    background-image: url('COV_hero_DevOps-Eng14.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 14, 14);
+    opacity: 0.8;
+    width: 100%;
+    z-index:999;
+}
+.name{
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+.nav-menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display: black;
+    font-size: 18px;
+}
+.nav-menu li a:hover{
+    color:rgb(21, 202, 90);
+    border-bottom: 2px solid green;
+    border-top: 2px solid green;
+}
+.toggle{
+    position:absolute;
+    top:.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.togglebar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.intro{
+    display:flex;
+
+}
+.imgPP img{
+    border: 6px solid white;
+    border-radius: 120px;
+    margin: 150px;
+    margin-top: 33%;
+}
+.description{
+    margin-top: 10%;
+}
+.intro-line h4{
+    font-size:4rem;
+    margin-left: 80px;
+}
+.text2{
+    color: rgb(153, 152, 152);
+    display: flex;
+    font-size: 2rem;
+    margin-top: -80px;
+    margin-left: 80px;
+}
+.anim{
+    color: #076613;
+    font-weight:500;
+}
+.bio{
+    font-size: 20px;
+    margin-left: 80px;
+    width: 80%;
+    color: white;
+}
+
+.content{
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00f3,#0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    0%{
+        background-position: 400%;
+    }
+}
+.button{
+    margin-left: 80px;
+
+}
+.button button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: green;
+}
+
+#Services{
+    color:rgb(246, 246, 246);
+    text-align: center;
+    
+}
+.myServices, .mySkills{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.service1{
+    width: 33%;
+    padding:10px;
+    border-radius:40px;
+    background-color:rgb(22, 21, 21);
+}
+.service2{
+    width: 33%;
+    padding:10px;
+    border-radius:40px;
+    background-color:rgb(22, 21, 21);
+}
+.service3{
+    width: 33%;
+    padding:10px;
+    border-radius:40px;
+    background-color:rgb(22, 21, 21);
+}
+.service1 img, .service2 img, .service3 img{
+    border: 1px solid rgb(61, 75, 73);
+    border-radius: 60px;
+}
+
+.service1:hover, .service2:hover, .service3:hover{
+
+    cursor:grab;
+    border: 1px solid green;
+}
+#Skills{
+    color: white;
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+.mySkills{
+    display: flex;
+}
+.Python, .Linux, .HTMLCSS, .Java{
+    width: 25%;
+}
+.outer{
+    margin:auto;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(239, 237, 237, 0.15),
+                -6px -6px 10px -1px rgba(223, 232, 220, 0.7);
+}
+.inner{
+    height:120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(98, 96, 96, 0.2),
+                inset -4px -4px 6px -1px rgba(2, 100, 12, 0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number, #number1, #number2, #number3{
+    font-weight: 600;
+    color:#fff8f8;
+
+}
+.Python circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+
+}
+.Linux circle{
+    fill: none;
+    stroke:url(#GradientColor1);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+
+}
+.HTMLCSS circle{
+    fill: none;
+    stroke:url(#GradientColor2);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+
+}
+.Java circle{
+    fill: none;
+    stroke:url(#GradientColor3);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+
+}
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 200;
+    }
+    
+}
+@keyframes anim1 {
+    100%{
+        stroke-dashoffset: 140;
+    }
+    
+}
+@keyframes anim2 {
+    100%{
+        stroke-dashoffset: 88;
+    }
+    
+}
+@keyframes anim3 {
+    100%{
+        stroke-dashoffset: 60;
+    }
+    
+}
+.Python svg, .Linux svg, .HTMLCSS svg, .Java svg{ 
+    margin-top: -160px;
+}
+#Project{
+    color: white;
+    text-align: center;
+    height: fit-content;
+}
+.contentProj{
+    width: 100%;
+    height: 100%;
+}
+.row1, .row2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.contentProj img{
+    display: block;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+.project1, .project2, .project3, .project4{
+    margin: 10px;
+    width: 33%;
+    position: relative;
+}
+.layer{
+    position:absolute;
+    background:linear-gradient(rgba(0,0,0,0.1),#112411);
+    border-radius: 20px;
+    height: 0%;
+    width: 100%;
+    top: 0;
+}
+.project1:hover .layer, .project2:hover .layer{
+    height: 100%;
+    cursor: pointer;
+}
+.project4:hover .layer, .project3:hover .layer{
+    height: 100%;
+    cursor: pointer;
+}
+.projdescrip{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity:0;
+    transition: 0.6s;
+}
+.projdescrip:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.projdescrip h5{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.projdescrip p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(253, 255, 253);
+}
+#Project a{
+    text-decoration:underline;
+    font-style: italic;
+    color: #58a161;
+
+}
+
+.contact-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    text-align: center;
+    background: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+form h1{
+    color:green;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input,  form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background:#f5f5f5;
+    font-size: 16px;
+    border-radius: 20px;
+}
+form button{
+    padding: 15px;
+    background: rgb(226, 91, 91);
+    color: #f5f5f5;
+    font-size: 18px;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border: 0;
+    border-radius: 30px;
+}
+form button:hover{
+    color: black;
+}
+@media (max-width:1150px)
+{
+    .imgPP img{
+        border: 6px solid white;
+        border-radius: 120px;
+        margin: 100px;
+        margin-top: 33%;
+    }
+    .intro-line h4{
+        font-size:3rem;
+    }
+    .text2{
+        margin-top: -60px;
+    }
+    .myServices{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width:1077px)
+{
+    .imgPP img{
+        border: 6px solid white;
+        border-radius: 120px;
+        margin: 100px;
+        margin-top: 33%;
+    }
+    .intro-line h4{
+        font-size:3rem;
+    }
+}
+@media (max-width:900px)
+{
+    .myServices{
+        font-size: 15px;
+    }
+    .myServices h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:700px)
+{
+    .toggle{
+        display: flex;
+        margin-top: 1.5rem;
+    }
+    .nav-menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        position:sticky;
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-menu li{
+        text-align: center;
+        padding: 12px;
+    }
+    .nav-menu.active{
+        display: flex;
+    }
+    .nav-menu li a:hover{
+        color:green;
+        border-bottom: .5px solid green;
+        border-top: .5px solid green;
+    }
+    .intro{
+        display: block;
+    }
+    .imgPP img{
+        height: 200px;
+        width: 200px;
+        margin-top: 10%;
+        margin-left: 33%;
+    }
+    .button{
+        margin-left: 33%;
+        margin-top: -75px;
+    }
+    .myServices{
+        display: block;
+        height: auto;
+    }
+    .service1, .service2, .service3{
+        width: 100%;
+    }
+    .break{
+        flex-basis: 100%;
+        height:0%;
+    }
+    .mySkills {
+        font-size: 10px;
+        display: flex;
+        flex-wrap:wrap-reverse;
+        justify-content: center;
+        padding-top: 20px;
+        height: auto;
+
+    }
+    .Python, .HTMLCSS, .Linux, .Java{
+        margin: auto;
+    }
+
+    .contentProj img{
+        display: block;
+        width: 80%;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .layer{
+        position:absolute;
+        background:linear-gradient(rgba(0,0,0,0.1),#1aca14);
+        border-radius: 20px;
+        height: 0%;
+        width: 80%;
+        top: 0;
+    }
+    .projdescrip h5{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(6, 6, 6);
+        margin-bottom: 14px;
+    }
+    .projdescrip p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(28, 29, 28);
+    }
+    .projdescrip{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width:450px)
+{
+    .intro-line h4{
+        margin-top: 80px;
+        font-size: 3rem;
+        margin-left: 20px;
+
+    }
+    .text2{
+        margin-left: 20px;
+    }
+    .bio{
+        width: 90%;
+        color: white;
+        margin-left: 20px;
+    }
+    .imgPP img{
+        height: 200px;
+        width: 200px;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    .button{
+        margin-left: 20%;
+        margin-top: -75px;
+    }
+    .Python, .HTMLCSS, .Linux, .Java{
+        margin-left:25%;
+    }
+    .mySkills{
+        display: block;
+        margin:0 auto;
+        height: auto;
+        width: 100%;
+    }
+    #Skills h1{
+        text-align: center;
+    }
+    #Project{
+        display: block;
+        height:fit-content;
+    }
+    .row1, .row2{
+        flex-direction: column;
+    }
+    .contentProj img{
+        width: 300px;
+    }
+    .layer{
+        position:absolute;
+        background:linear-gradient(rgba(0,0,0,0.1),#1aca14);
+        border-radius: 20px;
+        height: 0%;
+        width: 300px;
+        top: 0;
+    }
+    .projdescrip h5{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(6, 6, 6);
+        margin-bottom: 14px;
+    }
+    .projdescrip p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(28, 29, 28);
+    }
+    .projdescrip{
+        width: 300px;
+    }
+}
+
+@media (max-width:300px)
+{
+    .name{
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+    .imgPP img{
+        height: 100px;
+        width: 100px;
+        margin-top: 10%;
+        margin-left: 33%;
+    }
+    .button{
+        margin-left: 15%;
+        margin-top: -75px;
+    }
+    .contentProj img{
+        width: 200px;
+    }
+    .layer{
+        position:absolute;
+        background:linear-gradient(rgba(0,0,0,0.1),#1aca14);
+        border-radius: 20px;
+        height: 0%;
+        width: 200px;
+        top: 0;
+    }
+    .projdescrip h5{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(6, 6, 6);
+        margin-bottom: 14px;
+    }
+    .projdescrip p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(28, 29, 28);
+    }
+    .projdescrip{
+        width: 200px;
+    }
+}
